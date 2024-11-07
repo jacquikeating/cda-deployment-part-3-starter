@@ -1,4 +1,5 @@
 import "dotenv/config";
+import knex from "knex";
 
 export default {
   client: "mysql2",

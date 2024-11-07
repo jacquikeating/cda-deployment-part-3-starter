@@ -3,6 +3,7 @@ import express from "express";
 import warehouseRoutes from "./routes/warehouseRoute.js";
 import inventoryRoutes from "./routes/inventoryRoute.js";
 import cors from "cors";
+import knex from "knex";
 const app = express();
 const PORT = process.env.PORT || 5050;
 
