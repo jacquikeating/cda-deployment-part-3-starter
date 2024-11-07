@@ -3,7 +3,6 @@ import express from "express";
 import warehouseRoutes from "./routes/warehouseRoute.js";
 import inventoryRoutes from "./routes/inventoryRoute.js";
 import cors from "cors";
-import fetch from "node-fetch";
 const app = express();
 const PORT = process.env.PORT || 5050;
 

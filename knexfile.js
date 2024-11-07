@@ -1,5 +1,4 @@
 import "dotenv/config";
-import fetch from "node-fetch";
 
 export default {
   client: "mysql2",
