@@ -15,7 +15,15 @@ app.get("/", (_req, res) => {
 
 app.use("/warehouses", warehouseRoutes);
 app.use("/inventories", inventoryRoutes);
-app.use(cors());
+app.use(cors(corsOptions));
 app.listen(PORT, () => {
   console.log(`running at http://localhost:${PORT}`);
 });
+
+const corsOptions = {
+  origin: [
+    "warm-woodland-54729-516b83a873b7.herokuapp.com",
+    "https://venerable-praline-20eaaf.netlify.app/",
+  ],
+  credentials: true,
+};
