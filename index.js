@@ -13,13 +13,6 @@ app.get("/", (_req, res) => {
   res.send("Welcome to my API");
 });
 
-app.use("/warehouses", warehouseRoutes);
-app.use("/inventories", inventoryRoutes);
-app.use(cors(corsOptions));
-app.listen(PORT, () => {
-  console.log(`running at http://localhost:${PORT}`);
-});
-
 const corsOptions = {
   origin: [
     "https://warm-woodland-54729-516b83a873b7.herokuapp.com/",
@@ -27,3 +20,10 @@ const corsOptions = {
   ],
   credentials: true,
 };
+
+app.use("/warehouses", warehouseRoutes);
+app.use("/inventories", inventoryRoutes);
+app.use(cors(corsOptions));
+app.listen(PORT, () => {
+  console.log(`running at http://localhost:${PORT}`);
+});
