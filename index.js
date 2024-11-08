@@ -22,7 +22,7 @@ app.listen(PORT, () => {
 
 const corsOptions = {
   origin: [
-    "warm-woodland-54729-516b83a873b7.herokuapp.com",
+    "https://warm-woodland-54729-516b83a873b7.herokuapp.com/",
     "https://venerable-praline-20eaaf.netlify.app/",
   ],
   credentials: true,
